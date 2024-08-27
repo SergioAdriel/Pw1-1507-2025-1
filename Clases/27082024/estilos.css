@@ -1,0 +1,15 @@
+/*Esto ya separa mis estilos, por lo que se puede trabajar de manera mas ordenada*/
+h1{
+    color: blue;
+    border: 1px solid greenyellow;
+}
+p{
+   /* Aqui estamos agrrando parejo */
+}
+
+.parraoRojo{
+    font-size: 35px;
+    border: 1px solid red;  /*Aqui ya estamos selccionando cada parrafo en especifico*/
+    background-color: aquamarine;
+    padding-bottom: 120px;
+}
