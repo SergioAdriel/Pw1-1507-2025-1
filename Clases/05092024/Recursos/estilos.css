@@ -23,7 +23,7 @@ body{
     padding-bottom: 3px;
 }
 .imagenLogo{
-    width: 100px;
+    width: 200px;
 }
 .texto1{
     text-align: center;
@@ -53,4 +53,7 @@ body{
 }
 .bordes{
     border-radius: 5px;
+}
+li{
+    margin-top: 30px;
 }
