@@ -30,6 +30,4 @@
             echo "</tr>";
         }
     }
-
-    echo "</table>";
 ?>
