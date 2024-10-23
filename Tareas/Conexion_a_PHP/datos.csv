@@ -1,6 +1,0 @@
-nombre_usuario,carrera,no_cuenta,direccion,telefono,email,password,fecha_registro,permisos
-"Carlos Pineda",ICO,320228976,"Av. Siempre VIva",01800,generico@falso.com,123456,"2024-10-17 11:21:00",2
-"Juan Gutirrez",IEE,320994612,"Av. Sin nombre",5570764356,generico@falso.com,piggy,"2024-10-17 11:21:01",2
-"Quechi Apellido",ICO,323344566,"Casa Verde",5576986734,generico@falso.com,contra,"2024-10-17 11:21:03",2
-"Moises Mares",IEE,323455644,"Calle Madrilero",65578390,generico@falso.com,patito,"2024-10-17 11:21:04",2
-"Irving Rios",IM,324775642,"En el cerro",5578546578,generico@falso.com,nose,"2024-10-17 11:21:02",2
