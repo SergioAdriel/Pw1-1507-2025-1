@@ -1,23 +1,41 @@
 <?php include "./header.php"; ?>
 
-<div class="container" style="max-width: 400px; margin-top: 50px;">
-    <h4 class="center-align red-text text-darken-2">Eliminar Usuario</h4>
-    
-    <form method="POST" action="./Controlador/deleteUsuario.php" style="margin-top: 30px;">
-        <div class="input-field">
-            <label for="no_cuenta">Número de Cuenta</label>
-            <input type="text" name="no_cuenta" placeholder="Ingresa el número de cuenta" required>
-        </div>
-        
-        <div class="center-align" style="margin-top: 20px;">
-            <button type="submit" class="btn waves-effect waves-light red lighten-1">Eliminar Usuario</button>
-        </div>
-    </form>
+<?php
+// Iniciar la sesión para poder acceder a las variables de sesión
+session_start();
+// Obtener el número de teléfono del usuario desde la variable de sesión 'username'
+$telefono = $_SESSION['username']; 
 
-    <!-- Enlace adicional -->
-    <div class="center-align" style="margin-top: 20px;">
-        <a href="Principal.php" class="btn waves-effect waves-light teal lighten-1">Regresar</a>
+// Verificar si la variable de sesión 'username' está definida
+if (!isset($telefono)) {
+    // Si no está definida, redirigir al usuario a la página de inicio (index.php)
+    header("location: ./index.php");
+} else {
+    ?>
+    <div class="container" style="max-width: 400px; margin-top: 50px;">
+        <h4 class="center-align red-text text-darken-2">Eliminar Usuario</h4>
+        
+        <!-- Formulario para eliminar el usuario -->
+        <form method="POST" action="./Controlador/deleteUsuario.php" style="margin-top: 30px;">
+            <!-- Campo para ingresar el número de teléfono -->
+            <div class="input-field">
+                <label for="telefono">Número de Teléfono</label>
+                <input type="text" name="telefono" placeholder="Ingresa el número de teléfono" required>
+            </div>
+            
+            <!-- Botón para enviar el formulario y eliminar el usuario -->
+            <div class="center-align" style="margin-top: 20px;">
+                <button type="submit" class="btn waves-effect waves-light red lighten-1">Eliminar Usuario</button>
+            </div>
+        </form>
+
+        <!-- Enlace para regresar a la página principal -->
+        <div class="center-align" style="margin-top: 20px;">
+            <a href="Principal.php" class="btn waves-effect waves-light teal lighten-1">Regresar</a>
+        </div>
     </div>
-</div>
+<?php
+} 
+?>
 
 <?php include "./footer.php"; ?>
