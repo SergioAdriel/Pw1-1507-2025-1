@@ -18,8 +18,8 @@
                     
                     <!-- Campo para ingresar la contraseña -->
                     <div class="input-field">
-                        <input type="password" name="clave" id="clave" placeholder="password" required />
-                        <label for="clave">password</label>
+                        <input type="password" name="clave" id="clave" placeholder="Contraseña" required />
+                        <label for="clave">Contraseña</label>
                     </div>
                     
                     <!-- Botón de envío centrado -->
