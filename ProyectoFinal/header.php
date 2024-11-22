@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Condominio Citisio</title>
   <!-- Favicon -->
-  <link rel="icon" href="media/favicon/favicon.png" type="image/png"/>
+  <link rel="icon" href="./Media/favicon/favicon.png" type="image/png"/>
 
   <!-- Inclusión de fuentes y estilos para Materialize (biblioteca de CSS y JS para interfaces modernas) -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
