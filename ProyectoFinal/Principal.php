@@ -1,4 +1,5 @@
-<?php include "./header.php"; ?>  <!-- Incluye el archivo de cabecera -->
+<?php require "./header.php"; ?>
+ <!-- Incluye el archivo de cabecera -->
 
 <?php
 session_start();  // Inicia una sesión PHP
@@ -69,12 +70,12 @@ if (!isset($telefono)) {  // Si no está definido el teléfono (usuario no logue
 
     // Botones para eliminar usuario o registrar uno nuevo
     echo "<div class='container center-align' style='margin-top: 20px;'>
-            <a href='EliminarUsuario.php' class='btn waves-effect waves-light red lighten-1' style='margin-right: 10px;'>Eliminar Usuario</a>
-            <a href='Registro.php' class='btn waves-effect waves-light blue lighten-1'>Registro</a>
+            <a href='eliminarUsuario.php' class='btn waves-effect waves-light red lighten-1' style='margin-right: 10px;'>Eliminar Usuario</a>
+            <a href='registro.php' class='btn waves-effect waves-light blue lighten-1'>Registro</a>
           </div>";
 }
 ?>
-<?php include "./footer.php"; ?>  <!-- Incluye el archivo de pie de página -->
+<?php require "./footer.php"; ?>  <!-- Incluye el archivo de pie de página -->
 
 <!-- Script para actualizar la tabla dinámicamente -->
 <script>

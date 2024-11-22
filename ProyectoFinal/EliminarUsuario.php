@@ -1,4 +1,4 @@
-<?php include "./header.php"; ?>
+<?php require "./header.php"; ?>
 
 <?php
 // Iniciar la sesión para poder acceder a las variables de sesión
@@ -31,11 +31,11 @@ if (!isset($telefono)) {
 
         <!-- Enlace para regresar a la página principal -->
         <div class="center-align" style="margin-top: 20px;">
-            <a href="Principal.php" class="btn waves-effect waves-light teal lighten-1">Regresar</a>
+            <a href="principal.php" class="btn waves-effect waves-light teal lighten-1">Regresar</a>
         </div>
     </div>
 <?php
 } 
 ?>
 
-<?php include "./footer.php"; ?>
+<?php require "./footer.php"; ?>

@@ -12,5 +12,5 @@ $conexion = new mysqli($host_db, $user_db, $pass_db, $db_name);
 if($conexion->connect_error){ 
     // Si se encuentra un error de conexión, se muestra un mensaje en el navegador
     echo "<h1>MySQL no le está dando permisos para ejecutar consultas, verificar error</h1>";
-}
+} 
 ?>

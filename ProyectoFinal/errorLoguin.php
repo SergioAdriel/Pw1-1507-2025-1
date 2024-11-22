@@ -1,4 +1,5 @@
-<?php include "./header.php"; ?>
+<?php require "./header.php"; ?>
+
 
 <!-- Estructura principal del contenido de la página de error de login -->
 <div class="row">
@@ -18,4 +19,4 @@
     </div>
 </div>
 
-<?php include "./footer.php"; ?>
+<?php require "./footer.php"; ?>

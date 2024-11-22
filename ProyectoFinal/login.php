@@ -1,4 +1,4 @@
-<?php include "./header.php"; ?>
+<?php require "./header.php"; ?>
 
 <!-- Estructura de la página de inicio de sesión -->
 <div class="row">
@@ -32,4 +32,4 @@
     </div>
 </div>
 
-<?php include "./footer.php"; ?>
+<?php require "./footer.php"; ?>

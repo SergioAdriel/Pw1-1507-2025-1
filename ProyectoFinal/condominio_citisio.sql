@@ -5,7 +5,7 @@ CREATE TABLE residente (
   numero_departamento INT NOT NULL,
   email VARCHAR(255) NOT NULL UNIQUE, -- Cambiado a VARCHAR y agregado UNIQUE
   telefono VARCHAR(10) NOT NULL, -- Aumentado tamaño para flexibilidad
-  contraseña CHAR(10) DEFAULT NULL,
+  password CHAR(10) DEFAULT NULL,
   fecha_registro DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
   permisos INT NOT NULL DEFAULT 2,
   PRIMARY KEY (telefono),
@@ -13,7 +13,7 @@ CREATE TABLE residente (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- Insertar datos en la tabla residente
-INSERT INTO residente (nombre_usuario, letra_edificio, numero_departamento, email, telefono, contraseña, permisos)
+INSERT INTO residente (nombre_usuario, letra_edificio, numero_departamento, email, telefono, password, permisos)
 VALUES 
 ('Carlos Gómez', 'A', 102, 'carlos.gomez@correo.com', '5552345678', 'clave1234', 2),
 ('Ana Torres', 'C', 101, 'ana.torres@correo.com', '5553456789', 'password1', 2),

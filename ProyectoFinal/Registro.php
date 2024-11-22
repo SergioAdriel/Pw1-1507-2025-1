@@ -1,4 +1,5 @@
-<?php include "./header.php"; ?>  <!-- Incluye el archivo de cabecera -->
+<?php require "./header.php"; ?>
+ <!-- Incluye el archivo de cabecera -->
 
 <?php
 session_start();  // Inicia la sesión PHP
@@ -72,14 +73,14 @@ if (!isset($telefono)) {  // Si no está definido el teléfono (usuario no logue
 
     <!-- Enlace adicional para regresar a la página principal -->
     <div class="center-align" style="margin-top: 20px;">
-        <a href="Principal.php" class="btn waves-effect waves-light teal lighten-1">Regresar</a>
+        <a href="principal.php" class="btn waves-effect waves-light teal lighten-1">Regresar</a>
     </div>
 </div>
 
 <?php
 }  // Fin del bloque else
 ?>
-<?php include "./footer.php"; ?>  <!-- Incluye el archivo de pie de página -->
+<?php require "./footer.php"; ?>  <!-- Incluye el archivo de pie de página -->
 
 <!-- Script para inicializar los componentes de Materialize -->
 <script>

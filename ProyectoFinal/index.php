@@ -1,5 +1,5 @@
 <?php
-include "./header.php";
+require "./header.php";
 ?>
 
   <!-- Sección principal con una imagen de fondo (parallax) y un título con un botón de inicio de sesión -->
@@ -54,5 +54,5 @@ include "./header.php";
     </div>
   </div>
 <?php
-  include "./footer.php"
+  require "./footer.php"
 ?>

@@ -24,7 +24,7 @@ if ($array['contar'] > 0) {
     $_SESSION['username'] = $telefono;
 
     // Redirigir al usuario a la página principal
-    header("location: ../Principal.php");
+    header("location: ../principal.php");
     
 } else {
     // Si no existe el usuario con esas credenciales, redirigir al usuario a la página de error
